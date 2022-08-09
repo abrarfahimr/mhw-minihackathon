@@ -1,0 +1,44 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background-image: url(../asset/images/17-12-2018-monster-hunter-world-release-date-gameplay-trailer-platforms-co-op-everything-we-know.jpeg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: fantasy;
+}
+
+.landing {
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+}
+
+.landing__title {
+  position: relative;
+  bottom: 5rem;
+  font-size: 3.5rem;
+  color: #fafafa;
+  margin: 0;
+}
+
+.landing__button {
+  padding: 1.5rem;
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+}/*# sourceMappingURL=landing.css.map */
