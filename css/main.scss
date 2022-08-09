@@ -9,7 +9,7 @@
 body{
   margin: 0;
   padding: 0;
-  font-family: fantasy;
+  background-color: $primary-color;
 }
 p{
   margin: 0;
@@ -18,7 +18,7 @@ p{
 .nav{
   height: 8rem;
   padding: 1.5rem;
-  background-color: $primary-color;
+  background-color: $tertiary-color-black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,7 +29,7 @@ p{
 }
 
 .info{
-  padding: 1.5rem;
+  padding: 4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -37,8 +37,11 @@ p{
   &__image{
     width: 50vw;
     height: auto;
+    border: 4px solid $tertiary-color-black;
+    border-radius: 5%;
   }
   &__description{
+    font-family: fantasy;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -63,8 +66,25 @@ p{
     margin-left: 1rem;
   }
   &__paragraph{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     width: 60%;
     text-align: center;
     margin-bottom: 2rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.05rem;
+    line-height: 1.5rem;
+    font-weight: normal;
+  }
+  &__next, &__back{
+    padding: 0.5rem 1.5rem;
+    border: 1.5px solid $tertiary-color-black;
+    font-size: 1rem;
+    background-color: $secondary-color;
+    &:hover {
+      transition-duration: 0.2s;
+      background-color: $hover-color;
+      color: $tertiary-color-white;
+      border: 1.5px solid $tertiary-color-white;
+    }
   }
 }
