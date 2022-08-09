@@ -9,6 +9,10 @@
 body{
   margin: 0;
   padding: 0;
+  font-family: fantasy;
+}
+p{
+  margin: 0;
 }
 
 .nav{
@@ -28,10 +32,39 @@ body{
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   &__image{
     width: 50vw;
     height: auto;
-  
+  }
+  &__description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__name{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0.5rem;
+  }
+  &__stat{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  &__type{
+    margin-right: 1rem;
+  }
+  &__species{
+    margin-left: 1rem;
+  }
+  &__paragraph{
+    width: 60%;
+    text-align: center;
+    margin-bottom: 2rem;
   }
 }
