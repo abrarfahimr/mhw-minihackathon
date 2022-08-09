@@ -25,21 +25,20 @@ html{
   align-items: center;
   background-position: center;
   background-size: cover;
-}
-
-.landing__title{
-  position: relative;
-  bottom: 5rem;
-  font-size: 3.5rem;
-  color: #fafafa;
-  margin: 0;
-}
-
-.landing__button{
+  &__title{
+    position: relative;
+    bottom: 5rem;
+    font-size: 3.5rem;
+    color: #fafafa;
+    margin: 0;
+  }
+  &__button{
   padding: 1.5rem;
   color: white;
-  background-color:black;
+  background-color: black;
   border: none;
   border-radius: 1rem;
   cursor: pointer;
+  }
 }
+

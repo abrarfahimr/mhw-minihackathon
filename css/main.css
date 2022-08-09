@@ -1,1 +1,34 @@
-/*# sourceMappingURL=main.css.map */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  height: 8rem;
+  padding: 1.5rem;
+  background-color: rgb(195, 195, 192);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav__icon {
+  max-width: 15%;
+  height: auto;
+}
+
+.info {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.info__image {
+  width: 50vw;
+  height: auto;
+}/*# sourceMappingURL=main.css.map */

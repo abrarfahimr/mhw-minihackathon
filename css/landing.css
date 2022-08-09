@@ -25,7 +25,6 @@ html {
   background-position: center;
   background-size: cover;
 }
-
 .landing__title {
   position: relative;
   bottom: 5rem;
@@ -33,7 +32,6 @@ html {
   color: #fafafa;
   margin: 0;
 }
-
 .landing__button {
   padding: 1.5rem;
   color: white;
