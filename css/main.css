@@ -22,8 +22,12 @@ p {
   justify-content: center;
   align-items: center;
 }
+.nav__link {
+  width: 50%;
+  text-align: center;
+}
 .nav__icon {
-  max-width: 15%;
+  max-width: 25%;
   height: auto;
 }
 
