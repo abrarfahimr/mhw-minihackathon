@@ -2,11 +2,11 @@
 let monsterImages = [
   {
     id: 17,
-    image: "../asset/images/greatest_jagras.jpeg",
+    image: "./asset/images/greatest_jagras.jpeg",
   },
   {
     id: 18,
-    image: "../asset/images/monster-hunter-world-kulu-ya-ku.jpeg",
+    image: "./asset/images/monster-hunter-world-kulu-ya-ku.jpeg",
   },
   {
     id: 19,
