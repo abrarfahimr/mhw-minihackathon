@@ -1,21 +1,27 @@
 
 let monsterImages = [
   {
-    image: "./asset/images/greatest_jagras.jpeg",
+    id: 17,
+    image: "../asset/images/greatest_jagras.jpeg",
   },
   {
-    image: "./asset/images/monster-hunter-world-kulu-ya-ku.jpeg",
+    id: 18,
+    image: "../asset/images/monster-hunter-world-kulu-ya-ku.jpeg",
   },
   {
+    id: 19,
     image: "./asset/images/Monster-Hunter-Rise-Pukei-Pukei-3.png",
   },
   {
+    id: 20,
     image: "./asset/images/barroth.jpeg",
   },
   {
+    id: 21,
     image: "./asset/images/jyratodus.jpg",
   },
   {
+    id: 22,
     image: "./asset/images/tobi kadachi.jpeg",
   },
   {
@@ -60,38 +66,44 @@ const infoParagraph = document.querySelector(".info__paragraph");
 const infoImages = document.getElementById("images");
 // next btn
 const infoNext = document.querySelector(".info__next");
-
-fetch("https://mhw-db.com/monsters")
-  .then((response) => response.json())
-  .then((monsters) => {
-    console.log(monsters);
-
-    infoNext.addEventListener("click", (event) => {
-    index = index + 1;
-    i = i + 1;
-    infoName.innerText = monsters[index].name;
-    infoType.innerText = monsters[index].type;
-    infoSpecies.innerText = monsters[index].species;
-    infoParagraph.innerText = monsters[index].description;
-    infoImages.src = monsterImages.image[i];
-    }) 
-});
-
-
-ind = 30;
-// next btn
 const infoBack = document.querySelector(".info__back");
 
 fetch("https://mhw-db.com/monsters")
   .then((response) => response.json())
   .then((monsters) => {
-    console.log(monsters);
-
     infoNext.addEventListener("click", (event) => {
-    ind = ind-1;
-    infoName.innerText = monsters[index].name;
-    infoType.innerText = monsters[index].type;
-    infoSpecies.innerText = monsters[index].species;
-    infoParagraph.innerText = monsters[index].description;
+      event.preventDefault();
+      index = index + 1;
+      i = i + 1;
+      if (index === 29 || i === 13) {
+        index = 16;
+        i = 0
+      }
+      infoName.innerText = monsters[index].name;
+      infoType.innerText = monsters[index].type;
+      infoSpecies.innerText = monsters[index].species;
+      infoParagraph.innerText = monsters[index].description;
+      infoImages.setAttribute('src', monsterImages[i].image);
+      
     }) 
 });
+
+// back btn
+fetch("https://mhw-db.com/monsters")
+  .then((response) => response.json())
+  .then((monsters) => {
+    infoBack.addEventListener("click", (event) => {
+     index = index - 1;
+      i = i - 1;
+      if (index === -1 || i === -1) {
+        index = 16;
+        i = 0
+      }
+      infoName.innerText = monsters[index].name;
+      infoType.innerText = monsters[index].type;
+      infoSpecies.innerText = monsters[index].species;
+      infoParagraph.innerText = monsters[index].description;
+      infoImages.setAttribute('src', monsterImages[i].image);
+    }) 
+});
+

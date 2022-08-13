@@ -27,7 +27,6 @@ p{
     text-align: center;
   }
   &__icon{
-    
     max-width: 25%;
     height: auto;
   }
@@ -41,7 +40,9 @@ p{
   align-items: center;
   &__image{
     width: 50vw;
-    height: auto;
+    height: 50vh;
+    background-position: center;
+    background-size: contain;
     border: 4px solid $tertiary-color-black;
     border-radius: 5%;
   }
@@ -81,10 +82,12 @@ p{
     font-weight: normal;
   }
   &__next, &__back{
+    top: 1rem;
     padding: 0.5rem 1.5rem;
     border: 1.5px solid $tertiary-color-black;
     font-size: 1rem;
     background-color: $secondary-color;
+    margin-left: 1rem;
     &:hover {
       transition-duration: 0.2s;
       background-color: $hover-color;
