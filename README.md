@@ -1,4 +1,4 @@
-# mhw-minihackathon
+# MonsterHunterWorld-Mini Hackathon
 
 This project is a mini monster dictionary that I did with my colleague Micheal Rideout for a mini hackathon at BrainStation. The hackathon required us to use HTML, SASS, and Vanilla Javascript to create an interactive side by pulling data from an api of choice in 5 HOURS. The api we chose was the monster hunter world unofficial api (https://mhw-db.com/monsters) that has detailed information on each monster in the game. The project focused on execution rather than features so that we can have a working website by the end of 5 hours. 
 
